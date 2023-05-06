@@ -1,0 +1,27 @@
+
+<div class="main">
+  <input type="checkbox" id="chk" aria-hidden="true">
+
+      <div class="signup">
+          <form>
+            <span for="chk" aria-hidden="true" class="signup-text">Sign up</span>
+              <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="signupObj.firstName">
+              <input type="text" name="lastName" placeholder="Last Name" [(ngModel)]="signupObj.lastName">
+              <input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.Email">
+              <input type="phone" name="Phone" placeholder="Phone" [(ngModel)]="signupObj.Phone">
+              <input type="password" name="Password" placeholder="Password" [(ngModel)]="signupObj.Password">
+              <!-- <input type="password" name="Password" [(ngModel)]="signupObj.Password"hidden> -->
+              <button (click)="doSignUp()">Sign up</button>
+          </form>
+      </div>
+
+      <div class="login">
+          <form>
+              <label for="chk" aria-hidden="true">Login</label>
+              <input type="email" name="email" placeholder="Email" [(ngModel)]="loginObj.Email">
+              <input type="password" name="Password" placeholder="Password" [(ngModel)]="loginObj.Password">
+              <button (click)="doLogin()">Login</button>
+          </form>
+      </div>
+
+</div>

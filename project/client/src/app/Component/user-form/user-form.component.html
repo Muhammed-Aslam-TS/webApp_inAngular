@@ -1,0 +1,31 @@
+<app-nav-bar></app-nav-bar>
+
+
+<div class="flex justify-center py-9">
+
+<form class="form">
+  <p class="form-title">edit your details</p>
+   <div class="input-container">
+     <input placeholder="First Name" type="type" name="firstName" >
+    </div>
+
+    <div class="input-container">
+     <input  placeholder="Last Name" type="type" name="lastName" >
+   </div>
+
+
+   <div class="input-container">
+    <input  placeholder="Email" type="email" name="Email" [value]="email">
+  </div>
+
+   <!-- <div class="input-container">
+    <input  placeholder="Id" type="id" name="Id" [(ngModel)]="userId" hidden>
+  </div> -->
+
+
+    <button class="submit" type="submit" (click)="saveUser()">
+   save
+ </button>
+</form>
+
+</div>
